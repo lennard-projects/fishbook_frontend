@@ -1,0 +1,5 @@
+export const FETCH_ALL  = 'FETCH_ALL'
+export const START_LOADING = 'START_LOADING'
+export const END_LOADING = 'END_LOADING'
+export const FETCH_BY_FILTER = 'FETCH_BY_FILTER'
+export const FETCH_FISH = 'FETCH_FISH'
