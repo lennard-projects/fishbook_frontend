@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'http://localhost:5000/fishes'
+const url = 'https://fishbook-api.onrender.com/fishes'
 
 export const fetchFishes = (page) => axios.get(`${url}?page=${page}`)
 
