@@ -7,7 +7,7 @@ import { getFishes, getFishesByFilter } from '../actions/fishes'
 const Paginate = ({ filterQuery, page }) => {
     const { numberOfPages } = useSelector((state) => state.fishes)
     const dispatch = useDispatch()
-  
+/* eslint-disable */
      useEffect(() => {
       
        if(filterQuery === "All" || filterQuery === null){
@@ -16,7 +16,7 @@ const Paginate = ({ filterQuery, page }) => {
           dispatch(getFishesByFilter(filterQuery, page))
          }
      },[page])
-
+/* eslint-enable */
   return (
     <Pagination 
         className="justify-around"

@@ -9,9 +9,11 @@ const Information = () => {
   const dispatch = useDispatch()
   const { id } = useParams()
   
+  /* eslint-disable */
   useEffect(() => {
     dispatch(getFish(id))
   },[id]);
+/* eslint-enable */
 
   if(!fish) return null
 
